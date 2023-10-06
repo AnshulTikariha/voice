@@ -1,0 +1,87 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: monospace;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: monospace;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#chatbox {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #292929; /* Dark gray background */
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+#message {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1a1a1a; /* Darker background for input */
+}
+
+#sendButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style for chat messages */
+.message {
+    background-color: #000000; /* Blue message bubbles */
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px; /* Rounded message bubbles */
+    max-width: 70%; /* Limit message width */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    border: 2px solid transparent; /* Transparent border */
+}
+
+.typewriter {
+    border-right: 2px solid #fff; /* Solid border to simulate typing cursor */
+    animation: typing 1s steps(30) infinite;
+}
+
+@keyframes typing {
+    from, to {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: #fff;
+    }
+}
