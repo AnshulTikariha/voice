@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice APP</title>
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
@@ -14,10 +15,20 @@
         <label to="#output" id="txtLabel"></label>
     </header>
     <div class="container">
+        <div class="button-container">
+            <button class="copy-button" onclick="cleanScreen()">  <i class="fa fa-broom"></i> Clean </button>
+            <button class="copy-button" onclick="copyCodeToClipboard()">  <i class="fa fa-clipboard"></i> Copy </button>
+        </div>
+
         <div id="chatbox">
         </div>
     </div>
 </body>
+<footer>
+    <p class="footer-text">Note :</p>
+    <p class="footer-text">Let's Say <mark>Clean my screen</mark> Please note that this script will only clear the Command Prompt screen;</p>
+   
+</footer>
 <script type="text/javascript" src="script.js"></script>
 
 </html>

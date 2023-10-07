@@ -52,6 +52,25 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         }
         isListening = !isListening;
     });
+    
+
+    function copyCodeToClipboard() {
+        var codeSnippet = document.getElementById("chatbox");
+        var range = document.createRange();
+        range.selectNode(codeSnippet);
+        window.getSelection().addRange(range);
+        try {
+            document.execCommand("copy");
+            alert("Text copied to clipboard!");
+        } catch (err) {
+            console.error("Failed to copy: ", err);
+        }
+        window.getSelection().removeAllRanges();
+    }
+
+    function cleanScreen(){
+        chatbox.innerHTML = '';
+    }
 
 } else {
     chatbox.innerHTML = 'Speech recognition not supported in this browser.';
